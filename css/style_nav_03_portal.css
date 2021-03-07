@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+*{margin: 0; padding: 0;}
+
+#wrap{}
+.header{height: 70px;}
+
+.nav{height: 68px; background: #04264c;}
+.nav span{width: 50px; height: 51px; margin-top: 8px; float: left;}
+.nav_icon_l{margin-right: 146px; background: #021e3d;}
+.nav_icon_r{margin-left: 147px; background: #0d417b;}
+.nav a{padding: 22px 24px; text-decoration: none; float: left; color: #fff; font-size: 17px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;}
+
+.banner{height: 176px; background: url(../img/service_bg.jpg) no-repeat center 35%;}
+
+.sub_nav{height: 48px; border-bottom: 1px solid #d2d2d2;}
+#homeButton{width: 48px; height: 49px; background: #d1463b; border-right: 1px solid #d2d2d2; float: left;}
+.sub_nav_box{width: 218px; height: 48px; border-right: 1px solid #d2d2d2; float: left;}
+.function_box{width: 46px; height: 48px; border-right: 1px solid #d2d2d2; float: right;}
+.function_box:last-child{border-left: 1px solid #d2d2d2;}
+
+.contents{}
+.page_title{height: 99px;}
+.portals{height: 551px;}
+#expPortal{height: 152px;}
+.portal_box{width: 118px; height: 98px; margin-right: 20px; border: 1px solid #ccc; float: left;}
+.first_box{margin-left: 260px;}
+.ref{height: 66px; background: #f1f1f1; border-top: 1px solid #e3e3e3;} 
+
+.footer_01{height: 44px; background: #30343f;}    
+.footer_02{height: 132px; background: #3b414d;}
+
+.container{width: 1200px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.02);}
