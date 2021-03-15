@@ -10,19 +10,32 @@
 <body>
     <div id="wrap">
         <div class="header">
-            <div class="container"></div>
+            <div class="container">
+                <a id="headerLogo" href="../index.html"></a>
+                     <a id="headerImg1" href="#"><span>국가상징알아보기</span></a>
+                     <a id="headerImg2" href="#"></a>
+                     <a id="headerImg3" href="#"></a>
+                     <div class="header_right_box">
+                         <a href="nav_07_eng.html"><span>ENGLISH</span></a>
+                         <ul>
+                             <li><a href="#">축소</a></li>
+                             <li><a href="#">가</a></li>
+                             <li><a href="#">확대</a></li>
+                         </ul>
+                     </div>
+            </div>
         </div>
         <div class="nav">
             <div class="container">
-                <span class="nav_icon_l"></span>
-                <a href="nav_01_notice.html">알림/소식</a>
-                <a href="nav_02_news.html">소통/공감</a>
-                <a href="nav_03_portal.html">신고/지원</a>
-                <a href="nav_04_info.html">정보공개</a>
-                <a href="nav_05_law.html">법령/정책</a>
-                <a href="nav_06_intro.html">기관소개</a>
-                <a href="nav_07_eng.html">ENGLISH</a>
-                <span class="nav_icon_r"></span>
+                <a href="#"><span class="nav_icon_l">menu</span></a>
+                <a class="sub_menus" href="nav_01_notice.html">알림/소식</a>
+                <a class="sub_menus" href="nav_02_news.html">소통/공감</a>
+                <a class="sub_menus" href="nav_03_portal.html">신고/지원</a>
+                <a class="sub_menus" href="nav_04_info.html">정보공개</a>
+                <a class="sub_menus" href="nav_05_law.html">법령/정책</a>
+                <a class="sub_menus" href="nav_06_intro.html">기관소개</a>
+                <a class="sub_menus" href="nav_07_eng.html">ENGLISH</a>
+                <a href="#"><span class="nav_icon_r">search</span></a>
             </div>
         </div>
         <div class="banner">
@@ -58,15 +71,66 @@
                 <div class="container"></div>
             </div>
             <div class="ref">
-                <div class="container"></div>
+                <div class="container">
+                    <select name="department" id="dep_select">
+                        <option value="">부서별 누리집</option>
+                    </select>
+                    <select name="local" id="local_select">
+                        <option value="">시&middot;도 경찰청 누리집</option>
+                    </select>
+                    <select name="affiliate" id="affi_select">
+                        <option value="">부속기관 누리집</option>
+                    </select>
+                    <select name="related" id="related_select">
+                        <option value="">연계기관 누리집</option>
+                    </select>
+                    <div id="moveToTop">
+                        <a href="#wrap"></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="footer">
             <div class="footer_01">
-                <div class="container"></div>
+                <div class="container">
+                    <div class="footer_menu">
+                        <ul class="user_menu">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권정책</a></li>
+                            <li><a href="#">공공데이터 이용정책</a></li>
+                            <li><a href="#">문서 보기 프로그램 내려받기</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">정부&middot;지자체 조직도</a></li>
+                        </ul>
+                        <ul class="sns_menu">
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                            <li><a href="#">블로그</a></li>
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">네이버밴드</a></li>
+                            <li><a href="#">카카오스토리</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="footer_02">
-                <div class="container"></div>
+                <div class="container">
+                    <div class="footer_info">
+                        <ul class="info_01">
+                            <li>(우)03739 서울특별시 서대문구 통일로 97</li>
+                            <li>민원대표전화 182(유료)</li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                        <p class="info_02">copyright&copy;2018 national police agency</p>
+                        <p class="info_03">본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                    </div>
+                    <div class="footer_img_links">
+                        <div class="qrcode"><img src="../img/footer_qrcode.png" alt="qrcode"><span>모바일누리집</span></div>
+                        <div class="web_watch"><a href="#"><img src="../img/footer_webwatch.png" alt="web_watch"><span>Web Watch</span></a></div>
+                        <div class="privacy"><a href="#"><img src="../img/footer_eprivacy.png" alt="eprivacy"><span>Privacy</span></a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
