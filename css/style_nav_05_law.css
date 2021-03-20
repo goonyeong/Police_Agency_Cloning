@@ -23,7 +23,7 @@ ul{list-style: none;}
 
 .nav{height: 68px; background: #04264c;}
 .nav span{width: 50px; height: 51px; margin-top: 8px; float: left; text-indent: -9999px;}
-.nav_icon_l{margin-right: 146px; background: #021e3d url(../img/nav_icon_menu.png) no-repeat center center;}
+.nav_icon_l{margin-right: 146px; background: #021e3d url(../img/nav_icon_menu.png) no-repeat 15px 18px;}
 .nav_icon_r{margin-left: 147px; background: #0d417b url(../img/nav_icon_search.png) no-repeat center center;}
 .nav .sub_menus{padding: 22px 24px; float: left; color: #fff; font-size: 17px; font-weight: bold;}
 
@@ -45,7 +45,7 @@ ul{list-style: none;}
 
 .cont_box{height: 723px;}
 .ref{height: 66px; background: #f1f1f1; border-top: 1px solid #e3e3e3;}
-.ref select{width: 283px; height: 40px; padding: 8px 12px; border: 1px solid #c2c2c2; margin-top: 13px; margin-right: 7px; float: left; font-size: 14px 'Noto Sans KR', sans-serif;} 
+.ref select{width: 283px; height: 40px; padding: 8px 12px; border: 1px solid #c2c2c2; margin-top: 13px; margin-right: 7px; float: left; font: 14px 'Noto Sans KR', sans-serif;} 
 #moveToTop{float: left;}
 #moveToTop a{display: block; width: 40px; height: 40px; background: #555 url(../img/ref_icon_top.png) no-repeat center center; margin-top: 13px;}
 
