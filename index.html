@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>경찰청</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style_index.css">
 </head>
 <body>
+    <div id="skip" style="display: none;">
+        <div><a href="#banner">배너 바로가기</a></div>
+        <div><a href=".nav">메뉴 바로가기</a></div>
+        <div><a href="#contents">본문 바로가기</a></div>
+        <div><a href="#footer">하단 바로가기</a></div>
+    </div>
     <div id="wrap">
         <div id="banner">
             <div class="header">
@@ -76,10 +83,40 @@
             </div>
             <div class="cont_02">
                 <div class="container">
-                    <div class="newsbox"></div>
-                    <div class="newsbox"></div>
-                    <div class="newsbox"></div>
-                    <div class="newsbox"></div>
+                    <div class="newsbox">
+                        <div class="news_imagebox"><a href="#"><img src="img/newsbox_01.png" alt="뉴스 이미지1"></a></div>
+                        <div class="news_textbox">
+                            <h3>정부24(정부의 모든 서비스)</h3>
+                            <p>정부24 www.gov.kr 정부의 모든 서비스를 여기서 누려보세요. 정부서비스, 민원24, 정책&middot;정보</p>
+                        </div>
+                    </div>
+                    <div class="newsbox">
+                        <div class="news_imagebox"><a href="#"><img src="img/newsbox_02.jpg" alt="뉴스 이미지2"></a></div>
+                        <div class="news_textbox">
+                            <h3>국민참여예산제도</h3>
+                            <p>2021 집중접수 기간 : 1월4일 ~ 3월 15일</p>
+                        </div>
+                    </div>
+                    <div class="newsbox">
+                        <div class="news_imagebox"><a href="#"><img src="img/newsbox_03.jpg" alt="뉴스 이미지3"></a></div>
+                        <div class="news_textbox">
+                            <h3>2021년부터 이렇게 달라집니다</h3>
+                            <p>클릭하시면 이렇게 달라집니다 웹페이지로 이동</p>
+                        </div>
+                    </div>
+                    <div class="newsbox">
+                        <div class="news_imagebox"><a href="#"><img src="img/newsbox_04.jpg" alt="뉴스 이미지4"></a></div>
+                        <div class="news_textbox">
+                            <h3>2020년 공공기관 청렴도 측정 결과 공개</h3>
+                            <p>2020년 공공기관 청렴도 측정 결과 공개</p>
+                        </div>
+                    </div>
+                    <a href="#" class="arrow_news arrow_news_l ir_pm">왼쪽으로 이동</a>
+                    <a href="#" class="arrow_news arrow_news_r ir_pm">오른쪽으로 이동</a>
+                    <div class="news_pager">
+                        <div class="page_num"><span class="current_pg">3</span> / <span class="whole_pg">7</span></div>
+                    </div>
+                    <button class="play_btn ir_so">play/pause</button>
                 </div>
             </div>
             <div class="cont_03">
@@ -112,14 +149,28 @@
             </div>
             <div class="service">
                 <div class="container">
-                    <h2></h2>
-                    <ul>
-                        <li><a href="#" class="ser_tab">1</a></li>
-                        <li><a href="#" class="ser_tab">2</a></li>
-                        <li><a href="#" class="ser_tab">3</a></li>
-                        <li><a href="#" class="ser_tab">4</a></li>
+                    <h2>자주 찾는 서비스</h2>
+                    <ul class="tab_menu">
+                        <li><a href="#" class="ser_tab">대민 서비스<span class="icon_arrow"></span></a></li>
+                        <li><a href="#" class="ser_tab">신고하기<span class="icon_arrow"></span></a></li>
+                        <li><a href="#" class="ser_tab">경찰 관련 정보<span class="icon_arrow"></span></a></li>
+                        <li><a href="#" class="ser_tab">직원전용<span class="icon_arrow"></span></a></li>
                     </ul>
-                    <div class="ser_cont"></div>
+                    <div class="ser_cont">
+                        <a href="#" class="arrow_ser arrow_ser_l ir_pm">왼쪽으로 이동</a>
+                        <a href="#" class="arrow_ser arrow_ser_r ir_pm">오른쪽으로 이동</a>
+                        <ul class="cate_1">
+                            <li class="cate1_1"><a href="#"><span>자유게시판</span></a></li>
+                            <li class="cate1_2"><a href="#"><span>사이버안전지킴이</span></a></li>
+                            <li class="cate1_3"><a href="#"><span>교통민원24</span></a></li>
+                            <li class="cate1_4"><a href="#"><span>아동,여성,청소년<br>지원</span></a></li>
+                            <li class="cate1_5"><a href="#"><span>범죄경력회보서<br>발급</span></a></li>
+                            <li class="cate1_6"><a href="#"><span>승진및채용</span></a></li>
+                            <li class="cate1_7"><a href="#"><span>내사건검색</span></a></li>
+                            <li class="cate1_8"><a href="#"><span>의무경찰 지원접수</span></a></li>
+                            <li class="cate1_9"><a href="#"><span>경찰박물관</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="notice">
@@ -128,9 +179,50 @@
                         <h2>국민을 향한 열린 행정</h2>
                         <p>경찰의 다양한 소식과 정보를 전하며 국민을 향한 열린 행정을 위해 노력합니다.</p>
                     </div>
-                    <div class="noti_cont"></div>
-                    <div class="noti_cont"></div>
-                    <div class="noti_slidebox"></div>
+                    <div class="noti_cont">
+                        <a class="icon_more ir_pm" href="#">더보기</a>
+                        <dl class="noti_1">
+                            <dt><a href="#">공지사항</a></dt>
+                            <dd>
+                                <ul class="noti_list">
+                                    <li><a href="#">(공시송달) 경찰청 공시송달 공고</a><span class="noti_date">2021-02-25</span></li>
+                                    <li><a href="#">경찰대학 및 간부후보 졸업생 정부시상 후보자 공개검사</a><span class="noti_date">2021-02-25</span></li>
+                                    <li><a href="#">(공시송달) 경찰청 공시송달 공고</a><span class="noti_date">2021-02-22</span></li>
+                                    <li><a href="#">2021년 전국 경찰관서 경비업 담당자 전화번호 및 이력 공지</a><span class="noti_date">2021-02-19</span></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="noti_2">
+                            <dt><a href="#">채용공고</a></dt>
+                            <dd></dd>
+                        </dl>
+                        <dl class="noti_3">
+                            <dt><a href="#">입찰공고</a></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <div class="noti_cont">
+                        <a class="icon_more ir_pm" href="#">더보기</a>
+                        <dl class="noti_1">
+                            <dt><a href="#">보도자료</a></dt>
+                            <dd>
+                                <ul class="noti_list">
+                                    <li><a href="#">현 정부 출범 이후 교통사고 사망자 1,106명(26.4%)으로 증가</a><span class="noti_date">2021-02-25</span></li>
+                                    <li><a href="#">경찰청, 반부패협의회 외부인원과 시민청문관 간담회 개최</a><span class="noti_date">2021-02-25</span></li>
+                                    <li><a href="#">경찰, 과학수사 자문위원 위촉</a><span class="noti_date">2021-02-25</span></li>
+                                    <li><a href="#">경찰간부후보생 선발시험 10월 16일 실시</a><span class="noti_date">2021-02-22</span></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="noti_2">
+                            <dt><a href="#">사실확인</a></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <div class="noti_slidebox">
+                        <a href="#"><img src="img/noti_01.jpg" alt="이미지1"></a>
+                        <h4>2020 한국 마약 범죄 경찰의 역할과 미래</h4>
+                    </div>
                 </div>
             </div>
             <div class="ref">
