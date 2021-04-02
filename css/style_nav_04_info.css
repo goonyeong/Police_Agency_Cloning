@@ -3,23 +3,48 @@
 /* initial setting */
 #wrap{font-family: 'Noto Sans KR', sans-serif;}
 a{font-family: 'Noto Sans KR', sans-serif;}
-.container{width: 1200px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.02);}
+.container{width: 1200px; height: inherit; margin: 0 auto;}
 
 
 .sub_nav{height: 48px; border-bottom: 1px solid #d2d2d2;}
-#homeButton{width: 48px; height: 49px; background: #d1463b; border-right: 1px solid #d2d2d2; float: left;}
-.sub_nav_box{width: 218px; height: 48px; border-right: 1px solid #d2d2d2; float: left;}
-.function_box{width: 46px; height: 48px; border-right: 1px solid #d2d2d2; float: right;}
-.function_box:last-child{border-left: 1px solid #d2d2d2;}
+#homeButton{display: block; width: 48px; height: 49px; background: #d1463b url(../img/subpages_img/nav_icon_home.png) no-repeat center center; border-right: 1px solid #d2d2d2; float: left;}
+.sub_nav_box{float: left;}
+.sub_nav_box:after{content: ""; display: block; clear: both;}
+.sub_nav_box>li{border-right: 1px solid #d2d2d2; float: left; position: relative;}
+.sub_nav_box .active{background: #eeeeee;}
+.sub_nav_box>li>a{display: block; box-sizing: border-box; padding-left: 15px; width: 218px; height: 48px; line-height: 48px; font-size: 15px; font-weight: bold; color: #313131;}
+.sub_nav_box .td_menu{display: none; background: white; border: 1px solid #d2d2d2; position: absolute; top: 48px; left: -1px; z-index: 100;}
+.sub_nav_box>li:hover .td_menu{display: block;}
+.sub_nav_box .td_menu li{border-top: 1px solid #d2d2d2; ; position: relative;}
+.sub_nav_box .td_menu li:first-child{border-top:none;}
+.sub_nav_box .td_menu li a{display: block; box-sizing: border-box; padding-left: 15px; width: 218px; height: 48px; line-height: 48px; font-size: 15px; font-weight: bold; color: #313131;}
+.arrow_icon{display: block; width: 24px; height: 24px; position: absolute; top: 12px; right: 10px; background: url(../img/arrow_gray3.png) no-repeat;}
+.td_menu .arrow_icon{background-position: -48px 0;} 
+.function_box{float: right;}
+.function_box a{display: block; float: left; width: 48px; height: 48px; border-right: 1px solid #d2d2d2;}
+.function_box a.copy{background: url(../img/subpages_img/nav_icon_function.png) no-repeat; background-position: -48px 0; border-left: 1px solid #d2d2d2;}
+.function_box a.print{background: url(../img/subpages_img/nav_icon_function.png) no-repeat; background-position: -96px 0;}
+.function_box a:hover{background-color: #eeeeee;}
 
-.contents{}
 .page_title{height: 174px;}
+.page_title .container{position: relative;}
+.page_title h1{text-align: center; padding-top: 40px; font-size: 34px; color: #212121; font-weight: bold;}
+.page_title p{text-align: center; font-size: 14px; color: #494949; font-weight: bold; margin-top: 5px;}
+.page_title a{display: block; width: 48px; height: 48px; position: absolute; top: 60px; background: url(../img/slide_nav_gray.png) no-repeat;}
+.page_title .goto_l{left: 100px;}
+.page_title .goto_r{right: 100px; background-position: -48px 0;}
+
 .cont_box{height: 905px;}
 .cont_box .container{border-top: 2px solid #333;}
+.cont_box ul li{height: 62px; border-bottom: 1px solid #ccc; position: relative;}
+.cont_box ul li a{display: block; box-sizing: border-box; padding-left: 30px; line-height: 62px; font-size: 20px; color: #333; font-weight: bold;} 
+.cont_box ul li a .title_icon{display: inline-block; margin-right: 10px; width: 14px; height: 14px; background: url(../img/subpages_img/icons.png) no-repeat; background-position: -338px -8px;}
+.cont_box ul li a .detail_icon{display: inline-block; width: 34px; height: 34px; position: absolute; top: 15px; right: 30px; background: url(../img/subpages_img/arrows_upanddown.png) no-repeat;}
 
 .table_incharge{height: 211px;}
 .table_incharge .container{border-top: 2px solid #333;}
-.table_incharge table{border-collapse: collapse;}
+.table_incharge table{border-collapse: collapse; font-size: 15px; font-weight: bold; text-align: center;}
 .table_incharge th, td{width: 298px; height: 43px; border: 1px solid #ccc; border-top: none;}
-.table_incharge th{border-top: none; border-bottom: 1px dashed #ccc; background: #f7f7f7;}
+.table_incharge th{border-top: none; border-bottom: 1px dashed #ccc; background: #f7f7f7; color: #333;}
 .table_incharge th:last-child, td:last-child{width: 301px;}
+.table_incharge td{color: #888;}

@@ -40,7 +40,7 @@
 #nav .sub_menus{padding: 22px 24px; float: left; color: #fff; font-size: 17px; font-weight: bold;}
 
 /* banner */
-#banner{height: 176px; background: url(../img/service_bg.jpg) no-repeat center 35%;}
+#banner{height: 176px; background: url(../img/service_bg.jpg) no-repeat center 35%; background-size: cover;}
 
 /* ref */
 .ref{height: 66px; background: #f1f1f1; border-top: 1px solid #e3e3e3;}
