@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인사말 : HOME > 기관소개 > 열린청장실 > 청장소개 > 인사말</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style_nav_06_intro.css">
     <link rel="stylesheet" href="../css/style_subpage_common.css">
+    <link rel="stylesheet" href="../css/style_nav_06_intro.css">
+    <!--[if (lte IE 8)]>
+		<link rel='stylesheet' href='../css/IE8/style_subpage_IE8.css'>
+	<![endif]-->
 </head>
 <body>
     <div id="skip">
@@ -23,7 +26,7 @@
             <div class="container">
                 <a id="headerLogo" class="ir_pm" href="../index.html">로고</a>
                 <a id="headerImg1" href="#"><span>국가상징알아보기</span></a>
-                <a id="headerImg2" class="ir_pm"href="#">정부 사이트 바로가기</a>
+                <a id="headerImg2" class="ir_pm" href="#">정부 사이트 바로가기</a>
                 <a id="headerImg3" class="ir_pm" href="#">힘내라 대한민국 이미지</a>
                 <div class="header_right_box">
                     <a href="nav_07_eng.html"><span>ENGLISH</span></a>
@@ -185,7 +188,9 @@
             </div>
         </div>
         <div id="banner">
-            <div class="container"></div>
+            <div class="container">
+                <h2><strong>열린 행정</strong>으로 시민과 <strong>함께하는</strong><br>따뜻한 <strong>경찰</strong>이 되겠습니다</h2>
+            </div>
         </div>
         <div class="sub_nav">
             <div class="container">
@@ -241,31 +246,124 @@
                     </div>
                     <div class="box_info_chief">
                         <div class="list_news">
-                            <div id="tab_news"></div>
-                            <div id="cont_news"></div>
+                            <ul class="tab_news">
+                                <li class="active_chief">
+                                    <a href="#">포토스케치</a>
+                                    <ul class="tab_news_list">
+                                        <li><a href="#"><span>인천 지역 치안현장 방문</span><em>2021-02-05</em></a></li>
+                                        <li><a href="#"><span>제 1회 책임수사관 인증서 수여식 일정</span><em>2021-02-04</em></a></li>
+                                        <li><a href="#"><span>서울현충원 및 경찰기념공원 참배</span><em>2021-01-04</em></a></li>
+                                        <li><a href="#"><span>2021년 경찰청 시무식</span><em>2021-01-04</em></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">영상스케치</a>
+                                    <ul class="tab_news_list">
+                                        <li><a href="#"><span>코로나 19 백신 보관시설 치안현장 소개</span><em>2021-03-02</em></a></li>
+                                        <li><a href="#"><span>설 명절 치안현장방문</span><em>2021-02-10</em></a></li>
+                                        <li><a href="#"><span>인천지역 치안현장방문</span><em>2021-02-05</em></a></li>
+                                        <li><a href="#"><span>책임수사관 인증서 수여식</span><em>2021-02-04</em></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="imagelink"></div>
-                        <div class="imagelink"></div>
-                        <div class="imagelink"></div>
+                        <div class="imagelink chief_news">
+                            <div class="image_box ir_pm"><a href="#">news image</a></div>
+                            <div class="text_box">
+                                <h4>2021년 설 명절 치안현장 방문</h4>
+                                <span>2021-02-11</span>
+                            </div>
+                        </div>
+                        <div class="imagelink chief_schedule">
+                            <a href="#">
+                                <span><strong>청장 24시를 통해</strong><br>일정을 확인하세요.</span>
+                                <div class="calendar">
+                                    <ul>
+                                        <li>4</li>
+                                        <li>3</li>
+                                        <li class="dotw">토</li>
+                                    </ul>
+                                    <p>국민과 함께하는 경찰행정!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imagelink chief_com">
+                            <h2>청장과의 대화</h2>
+                            <p><em>국민 여러분</em>의 생생한 의견을<br>듣고 이를 <em>치안행정에</em><br><em>반영</em>하겠습니다</p>
+                            <a href="#">바로가기</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="ref">
                 <div class="container">
-                    <select name="department" id="dep_select">
-                        <option value="">부서별 누리집</option>
-                    </select>
-                    <select name="local" id="local_select">
-                        <option value="">시&middot;도 경찰청 누리집</option>
-                    </select>
-                    <select name="affiliate" id="affi_select">
-                        <option value="">부속기관 누리집</option>
-                    </select>
-                    <select name="related" id="related_select">
-                        <option value="">연계기관 누리집</option>
-                    </select>
+                    <div class="ref_btn">
+                        <button type="button">부서별 누리집</button>
+                        <ul>
+                            <li><a href="#">사이버 범죄신고</a></li>
+                            <li><a href="#">안전 드림</a></li>
+                            <li><a href="#">경찰 민원 포털</a></li>
+                            <li><a href="#">경찰승진및채용</a></li>
+                            <li><a href="#">스마트 국민 제보</a></li>
+                            <li><a href="#">교통범칙금</a></li>
+                            <li><a href="#">의무경찰</a></li>
+                            <li><a href="#">범죄경력회보서</a></li>
+                            <li><a href="#">유실물 누리집</a></li>
+                            <li><a href="#">총포 화약 시스템</a></li>
+                            <li><a href="#">경찰박물관</a></li>
+                            <li><a href="#">국가경찰위원회</a></li>
+                            <li><a href="#">경찰과학수사</a></li>
+                            <li><a href="#">수사구조개혁</a></li>
+                            <li><a href="#">민간경비교육</a></li>
+                            <li><a href="#">민간조사업정책</a></li>
+                            <li><a href="#">관광경찰</a></li>
+                        </ul>
+                    </div>
+                    <div class="ref_btn">
+                        <button type="button">시&middot;도 경찰청 누리집</button>
+                        <ul>
+                            <li><a href="#">서울특별시경찰청</a></li>
+                            <li><a href="#">부산광역시경찰청</a></li>
+                            <li><a href="#">대구광역시경찰청</a></li>
+                            <li><a href="#">인천광역시경찰청</a></li>
+                            <li><a href="#">광주광역시경찰청</a></li>
+                            <li><a href="#">대전광역시경찰청</a></li>
+                            <li><a href="#">울산광역시경찰청</a></li>
+                            <li><a href="#">경기도남부경찰청</a></li>
+                            <li><a href="#">경기도북부경찰청</a></li>
+                            <li><a href="#">강원도경찰청</a></li>
+                            <li><a href="#">충청북도도경찰청</a></li>
+                            <li><a href="#">충청남도도경찰청</a></li>
+                            <li><a href="#">세종특별자치시경찰청</a></li>
+                            <li><a href="#">전라북도경찰청</a></li>
+                            <li><a href="#">전라남도경찰청</a></li>
+                            <li><a href="#">경상북도경찰청</a></li>
+                            <li><a href="#">경상남도경찰청</a></li>
+                            <li><a href="#">제주특별자치도경찰청</a></li>
+                        </ul>
+                    </div>
+                    <div class="ref_btn">
+                        <button type="button">부속기관 누리집</button>
+                        <ul class="w_282">
+                            <li><a href="#">경찰대학</a></li>
+                            <li><a href="#">경찰인재개발원</a></li>
+                            <li><a href="#">중앙경찰학교</a></li>
+                            <li><a href="#">경찰수사연수원</a></li>
+                            <li><a href="#">경찰병원</a></li>
+                        </ul>
+                    </div>
+                    <div class="ref_btn">
+                        <button type="button">연계기관 누리집</button>
+                        <ul class="w_282">
+                            <li><a href="#">경찰복지포털(폴복지)</a></li>
+                            <li><a href="#">공무원연금공단</a></li>
+                            <li><a href="#">경찰공제회</a></li>
+                            <li><a href="#">도로교통공단</a></li>
+                            <li><a href="#">성범죄자 알림e</a></li>
+                        </ul>
+                    </div>
                     <div id="moveToTop">
-                        <a href="#wrap"></a>
+                        <a class="ir_pm" href="#">상단으로 바로가기</a>
                     </div>
                 </div>
             </div>
