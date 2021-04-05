@@ -1,0 +1,17 @@
+/* All */
+#headerImg1{background: url(../../img/IE8/header_flag.png) no-repeat;}
+.sns_menu li{background: url(../../img/IE8/sns_bg.png);}
+.sns_menu li a{background: url(../../img/footer_sns_sprite.png) no-repeat;}
+
+/* nav_01 / 02 / 05 */
+.search_box #searchOption{position: relative; top: 3px;}
+.search_box #searchCont{position: relative; top: -4px;}
+#rowPerPage{position: relative; top: 5px;}
+
+/* nav_06  */
+.chief_news .image_box a{background: #ccc url(../../img/IE8/intro_chiefnews.png) no-repeat center bottom;}
+.chief_schedule .calendar p{top: 72px; left: 37px;}
+
+/* nav_07(Eng) */
+.newsbox h3{background: url(../../img/IE8/eng_newsbox_logo.png) no-repeat 48% 20%;}
+.cont_anchorbox.pr_movie dd iframe{width: auto;}

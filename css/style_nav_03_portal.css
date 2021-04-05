@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 
-/* initial setting */
-#wrap{font-family: 'Noto Sans KR', sans-serif;}
-a{font-family: 'Noto Sans KR', sans-serif;}
-.container{width: 1200px; height: inherit; margin: 0 auto;}
-
-
-.sub_nav{height: 48px; border-bottom: 1px solid #d2d2d2;}
-#homeButton{display: block; width: 48px; height: 49px; background: #d1463b url(../img/subpages_img/nav_icon_home.png) no-repeat center center; border-right: 1px solid #d2d2d2; float: left;}
-.sub_nav_box{float: left;}
-.sub_nav_box:after{content: ""; display: block; clear: both;}
-.sub_nav_box>li{border-right: 1px solid #d2d2d2; float: left; position: relative;}
-.sub_nav_box .active{background: #eeeeee;}
-.sub_nav_box>li>a{display: block; box-sizing: border-box; padding-left: 15px; width: 218px; height: 48px; line-height: 48px; font-size: 15px; font-weight: bold; color: #313131;}
-.sub_nav_box .td_menu{display: none; background: white; border: 1px solid #d2d2d2; position: absolute; top: 48px; left: -1px; z-index: 100;}
-.sub_nav_box>li:hover .td_menu{display: block;}
-.sub_nav_box .td_menu li{border-top: 1px solid #d2d2d2; ; position: relative;}
-.sub_nav_box .td_menu li:first-child{border-top:none;}
-.sub_nav_box .td_menu li a{display: block; box-sizing: border-box; padding-left: 15px; width: 218px; height: 48px; line-height: 48px; font-size: 15px; font-weight: bold; color: #313131;}
-.arrow_icon{display: block; width: 24px; height: 24px; position: absolute; top: 12px; right: 10px; background: url(../img/arrow_gray3.png) no-repeat;}
-.td_menu .arrow_icon{background-position: -48px 0;} 
-.function_box{float: right;}
-.function_box a{display: block; float: left; width: 48px; height: 48px; border-right: 1px solid #d2d2d2;}
-.function_box a.copy{background: url(../img/subpages_img/nav_icon_function.png) no-repeat; background-position: -48px 0; border-left: 1px solid #d2d2d2;}
-.function_box a.print{background: url(../img/subpages_img/nav_icon_function.png) no-repeat; background-position: -96px 0;}
-.function_box a:hover{background-color: #eeeeee;}
-
 .page_title{height: 99px;}
 .page_title .container{position: relative;}
 .page_title h1{text-align: center; padding-top: 25px; font-size: 34px; color: #212121; font-weight: bold;}
