@@ -66,11 +66,16 @@ a{font-family: 'Noto Sans KR', sans-serif;}
 .title_common .arrow_title_l{top: 50%; left: -10%; transform: translate(0, -50%);}
 .title_common .arrow_title_r{top: 50%; right: -10%; transform: translate(0, -50%); background-position: -48px 0;}
 /* titles */
-.titles>li{height: 685px; width: 100%; position: absolute; top: 0; left: 0; z-index: -999;}
+.titles>li{display: none; height: 685px; width: 100%; position: absolute; top: 0; left: 0; z-index: -999;}
 .titles .container{position: relative;}
 .titles h2 strong{font-weight: normal; font-size: 67px;}
-.titles h2{position: absolute; top: 260px; left: 70px; line-height: 1; text-shadow: 1px 1px 2px #333; font-family: 'Nanum Myeongjo', serif; font-size: 46px; font-style: italic; color: #fff;}
+.titles h2{position: absolute; bottom: 300px; left: 70px; line-height: 1; text-shadow: 1px 1px 2px #333; font-family: 'Nanum Myeongjo', serif; font-size: 46px; font-style: italic; color: #fff;}
 .title_1{background: url(../img/banner_main_01.jpg) no-repeat center top; background-size: cover;}
+.title_2{background: url(../img/banner_main_02.jpg) no-repeat center top; background-size: cover;}
+.title_3{background: url(../img/banner_main_03.jpg) no-repeat center top; background-size: cover;}
+.title_3 a{display: block; width: 315px; height: 45px; font-weight: bold; text-align: center; font-style: italic; font-size: 20px; color: #fff; line-height: 45px; background: url(../img/btn_bg.png); position: absolute; bottom: 300px; right: 250px;}
+.titles>li.active_title{display: block;}
+
 
 /* cont_02 */
 .cont_02{height: 350px; background: #e8edee;}
@@ -148,6 +153,8 @@ a{font-family: 'Noto Sans KR', sans-serif;}
 .noti_cont dl dd{border-top: 1px solid #9a9a9a; box-sizing: border-box; padding-top: 20px; width: 439px; position: absolute;}
 .noti_cont dl.noti_2 dd{left: -92px;}
 .noti_cont dl.noti_3 dd{left: -184px;}
+.noti_cont ul.noti_list{display: none;}
+.noti_cont ul.noti_list.active_noti{display: block;}
 .noti_cont ul.noti_list li{padding-left: 20px; margin-bottom: 5px; position: relative; background: url(../img/zzzz.png) no-repeat 9px center;}
 .noti_cont ul.noti_list li a{display: block; font-size: 14px; width: 319px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #4d4d4d;}
 .noti_cont ul.noti_list li span{position: absolute; top: 0; right: 10px; font-size: 14px; color: #939393;}

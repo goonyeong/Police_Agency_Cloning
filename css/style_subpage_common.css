@@ -7,7 +7,7 @@ a{font-family: 'Noto Sans KR', sans-serif;}
 .container{width: 1200px; height: inherit; margin: 0 auto;}
 
 /* header */
-#header{height: 70px;}
+#header{height: 70px; background: #fff; position: fixed; top: 0; left: 0; z-index: 1; width: 100%;}
 #headerLogo{display: block; width: 161px; height: 46px; margin-top: 14px; margin-right: 26px; background: url(../img/subpages_img/header_logo.png) no-repeat; float: left;}
 #headerImg1{display: block; width: 100px; height: 32px; margin-top: 21px; margin-left: 21px; background: url(../img/header_flag.png) no-repeat; background-size: 48px; float: left;}
 #headerImg1 span{display: block; width: 40px; margin-left: 60px; font-size: 10px; font-weight: bold; color: #444;}
@@ -23,7 +23,7 @@ a{font-family: 'Noto Sans KR', sans-serif;}
 .header_right_box ul li a{display: block; width: 20px; height: 20px; font-size: 12px; color: #4c4c4c; line-height: 20px;}
 
 /* nav */
-#nav{height: 68px; background: #04264c;}
+#nav{height: 68px; background: #04264c; position: fixed; top: 0; left: 0; z-index: 1; margin-top: 70px; width: 100%;}
 #nav .container{box-sizing: border-box; position: relative;}
 #nav ul li{position: relative; float: left;}
 #nav ul li dl{position: absolute; padding: 5px; background: #fff; top: 68px; left: 0; color: #414141; z-index: 1; display: none; box-shadow: 0 6px 12px rgb(0, 0, 0, .2);}
@@ -46,7 +46,7 @@ a{font-family: 'Noto Sans KR', sans-serif;}
 #nav .sub_menus{padding: 22px 24px; float: left; color: #fff; font-size: 17px; font-weight: bold;}
 
 /* banner */
-#banner{height: 176px; background: url(../img/service_bg.jpg) no-repeat center 35%; background-size: cover;}
+#banner{height: 176px; margin-top: 138px; background: url(../img/service_bg.jpg) no-repeat center 35%; background-size: cover;}
 #banner h2{text-align: center; font-size: 29px; color: #fff; line-height: 1.1; padding-top: 50px; font-style: italic; font-family: 'Nanum Myeongjo', serif;}
 #banner h2 strong{font-size: 38px;}
 

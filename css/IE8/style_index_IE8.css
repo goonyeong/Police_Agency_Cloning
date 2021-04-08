@@ -10,7 +10,7 @@
 .title_common .arrow_title_r{top: 30%; right: -10%;}
 .title_common .btn_title_p{top: 430px; left: 45%;}
 .title_1{
-    background: url(../../img/banner_main_01.jpg) no-repeat center fixed; 
+    background: url(../../img/banner_main_01.jpg) no-repeat center; 
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/banner_main_01.jpg', sizingMethod='scale')";
