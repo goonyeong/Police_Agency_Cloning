@@ -12,12 +12,120 @@ function letMenuVisible(){
 };
 
 
+// Slide Banner
+function doSlideBanner(){
+    var BANNER_LIST = $('.titles');
+    var BANNER_WIDTH = "100%";
+    var setIntervalId = undefined;
+    var BANNER_PAGERS = $('.banner_pager');
+    var active_banner = 'active_banner';
+   
+    function moveToNext(){
+        var FIRST_SLIDE = BANNER_LIST.find('li:first');
+        var LAST_SLIDE = BANNER_LIST.find('li:last');
+
+        BANNER_LIST.stop().animate({marginLeft: '-' + BANNER_WIDTH}, 500, function(){
+            
+            // Pager, titles의 Class 제어
+            for(var i=0; i<BANNER_LIST.children().length; i++){
+                if(BANNER_LIST.children().eq(i).hasClass(active_banner)){
+                    BANNER_LIST.children().removeClass(active_banner);
+                    if(i===BANNER_LIST.children().length-1){
+                        BANNER_LIST.children().eq(0).addClass(active_banner);
+                    } else{
+                        BANNER_LIST.children().eq(i+1).addClass(active_banner);
+                    }
+                    break;
+                }
+            }
+            for(var i=0; i<BANNER_PAGERS.children().length; i++){
+                if(BANNER_PAGERS.children().eq(i).hasClass(active_banner)){
+                    BANNER_PAGERS.children().removeClass(active_banner);
+                    if(i===BANNER_PAGERS.children().length-1){
+                        BANNER_PAGERS.children().eq(0).addClass(active_banner);
+                    } else{
+                        BANNER_PAGERS.children().eq(i+1).addClass(active_banner);
+                    }
+                    break;
+                }
+            }
+
+            FIRST_SLIDE.insertAfter(LAST_SLIDE);
+            BANNER_LIST.css({marginLeft: 0});
+        });
+    }
+    
+    function moveToPrev(){
+        var FIRST_SLIDE = BANNER_LIST.find('li:first');
+        var LAST_SLIDE = BANNER_LIST.find('li:last');
+
+        LAST_SLIDE.insertBefore(FIRST_SLIDE);
+        BANNER_LIST.css({marginLeft: '-' + BANNER_WIDTH});
+        BANNER_LIST.stop().animate({marginLeft: 0}, 500, function(){
+            
+            // Pager, titles의 Class 제어
+            for(var i=0; i<BANNER_LIST.children().length; i++){
+                if(BANNER_LIST.children().eq(i).hasClass(active_banner)){
+                    BANNER_LIST.children().removeClass(active_banner);
+                    if(i===0){
+                        BANNER_LIST.children().eq(BANNER_LIST.children().length-1).addClass(active_banner);
+                    } else{
+                        BANNER_LIST.children().eq(i-1).addClass(active_banner);
+                    }
+                    break;
+                }
+            }
+            for(var i=0; i<BANNER_PAGERS.children().length; i++){
+                if(BANNER_PAGERS.children().eq(i).hasClass(active_banner)){
+                    BANNER_PAGERS.children().removeClass(active_banner);
+                    if(i===0){
+                        BANNER_PAGERS.children().eq(BANNER_PAGERS.children().length-1).addClass(active_banner);
+                    } else{
+                        BANNER_PAGERS.children().eq(i-1).addClass(active_banner);
+                    }
+                    break;
+                }
+            }
+        });
+    }
+    
+    function clickBtn(){
+        var NEXT_BTN = $('.arrow_title_r');
+        var PREV_BTN = $('.arrow_title_l');
+
+        NEXT_BTN.click(moveToNext);
+        PREV_BTN.click(moveToPrev);
+    }
+
+    function doAutoSlide(){
+        setIntervalId = setInterval(moveToNext, 6000);
+    }
+
+    function stopAutoSlide(){
+        var PLAY_BTN = $('.btn_control_Slide'); 
+        PLAY_BTN.click(function(){
+            $(this).toggleClass('play');
+            var hasPlayClass = $(this).hasClass('play');
+            if(hasPlayClass){
+                clearInterval(setIntervalId);
+            } else{
+                doAutoSlide();
+            }
+        });
+    }
+
+    clickBtn();
+    doAutoSlide();
+    stopAutoSlide();
+}
+
+
 // NewsBox slide ///////////////////////////////////////////////////////
 function doSlideNewsbox(){
     var NEWS_LIST = $('.newslist');
     var ARROW_L = $('.arrow_news_l');
     var ARROW_R = $('.arrow_news_r');
-    var NEWS_WIDTH = $('.newsbox:first').outerWidth() + 8;
+    var NEWS_WIDTH = 294 + 8;
     var PLAY_BTN = $('.cont_02 .container>button');
     var NEWS_PAGER = $('.cont_02 .news_pager');
     var setIntervalID = undefined;
@@ -47,11 +155,9 @@ function doSlideNewsbox(){
     }
     
     function stopAutoslide(){   
-        // When button clicked
         PLAY_BTN.click(function(){
             $(this).toggleClass('play');
             var hasPlayClass = $(this).hasClass('play');
-            console.log(hasPlayClass);
             if(hasPlayClass){
                 clearInterval(setIntervalID);
             } else{
@@ -125,20 +231,45 @@ function controlServiceCont(){
         });
     }
 
+    function doServiceSlide(){
+        var ARROW_R = $('.arrow_ser_r');
+        var ARROW_L = $('.arrow_ser_l');
+        var SER_LIST = $('.ser_tab1 .ser_list');
+        var NEWS_WIDTH = 98 + 22;
+
+        ARROW_R.click(function(){
+            var FIRST_LI = SER_LIST.find('.ser_list_slide:first');
+            var LAST_LI = SER_LIST.find('.ser_list_slide:last');
+            
+            SER_LIST.stop().animate({marginLeft: -NEWS_WIDTH}, 1000, function(){
+                FIRST_LI.insertAfter(LAST_LI);
+                $(this).css({marginLeft: 0});
+            });
+
+            return false;
+        });
+        ARROW_L.click(function(){
+            var FIRST_LI = SER_LIST.find('.ser_list_slide:first');
+            var LAST_LI = SER_LIST.find('.ser_list_slide:last');
+
+            LAST_LI.insertBefore(FIRST_LI);
+            SER_LIST.css({marginLeft: -NEWS_WIDTH})
+            SER_LIST.stop().animate({marginLeft: 0}, 1000);
+
+            return false;
+        }); 
+    }
     
     switchTapMenu();
+    doServiceSlide();
 }
-
 
 
 // Notice visible ////////////////////////////////////////////////////
 function letNoticeVisible(){
     var MENU1 = $('.notice1 dl'); 
     MENU1.on("click", function(){
-        for(let i = 0; i < MENU1.length; i++){
-            $(MENU1[i]).removeClass('active_noti');
-            $(MENU1[i]).find()
-        }   
+        $(MENU1).removeClass('active_noti') 
         $(this).addClass('active_noti');
 
         return false;
@@ -146,10 +277,7 @@ function letNoticeVisible(){
 
     var MENU2 = $('.notice2 dl'); 
     MENU2.on("click", function(){
-        for(let i = 0; i < MENU2.length; i++){
-            $(MENU2[i]).removeClass('active_noti');
-            $(MENU2[i]).find()
-        }   
+        $(MENU2).removeClass('active_noti') 
         $(this).addClass('active_noti');
 
         return false;
@@ -157,14 +285,111 @@ function letNoticeVisible(){
 };
 
 
+// Notice Slide ////////////////////////////////////////////////////
+function doSlideNotice(){
+    var NOTICE_LIST = $('.slides');
+    var NOTICE_WIDTH = 280;
+    var setIntervalId = undefined;
+   
+    function moveToNext(){
+        var FIRST_SLIDE = NOTICE_LIST.find('li:first');
+        var LAST_SLIDE = NOTICE_LIST.find('li:last');
+        
+        NOTICE_LIST.stop().animate({marginLeft: -NOTICE_WIDTH}, 500, function(){
+            FIRST_SLIDE.insertAfter(LAST_SLIDE);
+            NOTICE_LIST.css({marginLeft: 0});
+        });
+    }
+    
+    function moveToPrev(){
+        var FIRST_SLIDE = NOTICE_LIST.find('li:first');
+        var LAST_SLIDE = NOTICE_LIST.find('li:last');
+
+        LAST_SLIDE.insertBefore(FIRST_SLIDE);
+        NOTICE_LIST.css({marginLeft: -NOTICE_WIDTH});
+        NOTICE_LIST.stop().animate({marginLeft: 0}, 500);
+    }
+    
+    function clickBtn(){
+        var NEXT_BTN = $('.remote_r');
+        var PREV_BTN = $('.remote_l');
+
+        NEXT_BTN.click(moveToNext);
+        PREV_BTN.click(moveToPrev);
+    }
+
+    function doAutoSlide(){
+        setIntervalId = setInterval(moveToNext, 4000);
+    }
+
+    function stopAutoSlide(){
+        var PLAY_BTN = $('.remote_p'); 
+        PLAY_BTN.click(function(){
+            $(this).toggleClass('play');
+            var hasPlayClass = $(this).hasClass('play');
+            if(hasPlayClass){
+                clearInterval(setIntervalId);
+            } else{
+                doAutoSlide();
+            }
+        });
+    }
+
+    clickBtn();
+    doAutoSlide();
+    stopAutoSlide();
+}
+
+// Location tab ////////////////////////////////////////////////////////////
+function controlLocationTab(){
+    var LO_MENU_LIST = $('.howToCome_cont');
+    var activeClass = 'active_location';
+
+    LO_MENU_LIST.on('click', function(e){ 
+        e.preventDefault(); 
+        LO_MENU_LIST.removeClass(activeClass);
+        $(this).addClass(activeClass);
+    });
+}
+
+// Create map /////////////////////////////////////////////////////////////
+function createMap(){
+    var mapContainer = document.getElementById('map_police_agency'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.563398, 126.967410), // 지도의 중심좌표
+        level: 5 // 지도의 확대 레벨
+    };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.563398, 126.967410); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null); 
+}
+
+
+
 
 // init //////////////////////////////////////////////////////////////////////
 function init(){
     letMenuVisible();
+    doSlideBanner();
     doSlideNewsbox();
     controlServiceCont();
     letNoticeVisible();
-
+    doSlideNotice();
+    controlLocationTab();   
+    createMap();
 };
 
 init();

@@ -11,13 +11,14 @@
 .title_common .arrow_title_l{top: 30%; left: -10%;}
 .title_common .arrow_title_r{top: 30%; right: -10%;}
 .title_common .btn_title_p{top: 430px; left: 45%;}
+
+.titles li{width: 100%;}
 .title_1{
     background: url(../../img/banner_main_01.jpg) no-repeat center; 
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/banner_main_01.jpg', sizingMethod='scale')";
 }
-.titles h2 strong{color: blue;}
 
 .cont_02 .arrow_news_l{top: 45%; left: -5%;}
 .cont_02 .arrow_news_r{top: 45%; right: -5%;}

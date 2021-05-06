@@ -8,12 +8,20 @@
 .page_title .goto_l{left: 100px;}
 .page_title .goto_r{right: 100px; background-position: -48px 0;}
 
-.cont_box{height: 905px;}
+.cont_box{margin-bottom: 100px;}
 .cont_box .container{border-top: 2px solid #333;}
-.cont_box ul li{height: 62px; border-bottom: 1px solid #ccc; position: relative;}
-.cont_box ul li a{display: block; box-sizing: border-box; padding-left: 30px; line-height: 62px; font-size: 20px; color: #333; font-weight: bold;} 
-.cont_box ul li a .title_icon{display: inline-block; margin-right: 10px; width: 14px; height: 14px; background: url(../img/subpages_img/icons.png) no-repeat; background-position: -338px -8px;}
-.cont_box ul li a .detail_icon{display: inline-block; width: 34px; height: 34px; position: absolute; top: 15px; right: 30px; background: url(../img/subpages_img/arrows_upanddown.png) no-repeat;}
+.cont_box .container>ul>li{position: relative; border-bottom: 1px solid #ccc;}
+.cont_box .container>ul>li>a{display: block; height: 62px; box-sizing: border-box; padding-left: 30px; line-height: 62px; font-size: 20px; color: #333; font-weight: bold;} 
+.cont_box .container>ul>li>a .title_icon{display: inline-block; margin-right: 10px; width: 14px; height: 14px; background: url(../img/subpages_img/icons.png) no-repeat; background-position: -338px -8px;}
+.cont_box .container>ul>li>a .detail_icon{display: inline-block; width: 34px; height: 34px; position: absolute; top: 15px; right: 30px; background: url(../img/subpages_img/arrows_upanddown.png) no-repeat;}
+.cont_box .container>ul>li>dl{display: none; color: #888; font-size: 15px; font-weight: bold; line-height: 1.8; padding: 20px 50px; border-top: 1px dotted #ccc;}
+.cont_box .container>ul>li>dl>dt{color: #116f96; font-size: 18px; margin-bottom: 10px;}
+.cont_box .container>ul>li>dl>dd{margin-bottom: 20px;}
+.cont_box .container>ul>li>dl>dd>dl dt{color: #333; margin-bottom: 5px;}
+.cont_box .container>ul>li>dl>dd>dl dd{margin-bottom: 20px;}
+.cont_box .container>ul>li>dl>dd>ol{font-size: 14px; margin: 5px 0;}
+
+
 
 .table_incharge{height: 211px;}
 .table_incharge .container{border-top: 2px solid #333;}

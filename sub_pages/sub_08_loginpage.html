@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='Title' content='경찰청 입법예고'>
+    <meta name='Title' content='경찰청 로그인'>
 	<meta name='Keywords' content='경찰청 경찰'>
 	<meta name='Author' content='Asher'>
 	<meta name='Publisher' content='Asher'>
-	<meta name='Description' content='경찰청 입법예고'>
+	<meta name='Description' content='경찰청 민원'>
 
     <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
 
-    <title>입법안내 : HOME > 법령/정책 > 입법안내</title>
+    <title>로그인 : HOME > 로그인</title>
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style_subpage_common.css">
-    <link rel="stylesheet" href="../css/style_nav_05_law.css">
+    <link rel="stylesheet" href="../css/style_sub_08_loginpage.css">
 
     <script src="../js/jquery-3.6.0.min.js" defer></script>
     <script src="../js/script_sub.js" defer></script>
@@ -34,7 +34,7 @@
             <li><a href="#footer">하단 바로가기</a></li>
         </ul>
     </div>
-    <div id="wrap_05">
+    <div id="wrap_03">
         <div id="header">
             <div class="container">
                 <h1><a id="headerLogo" class="ir_pm" href="../index.html"> 경찰청 로고</a></h1>
@@ -209,27 +209,7 @@
             <div class="container">
                 <a href="../index.html" id="homeButton"></a>
                 <ul class="sub_nav_box">
-                    <li><a href="#">법령/정책<span class="arrow_icon"></span></a></li>
-                    <li>
-                        <a href="#">법령정보<span class="arrow_icon"></span></a>
-                        <ul class="td_menu">
-                            <li><a href="#">법령정보<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">국회정보공개<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">규제개혁<span class="arrow_icon"></span></a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="#">입법예고<span class="arrow_icon"></span></a>
-                        <ul class="td_menu">
-                            <li class="active"><a href="#">입법예고<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">행정예고<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">개정법령<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">소관법령<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">훈령예규<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">법령검색<span class="arrow_icon"></span></a></li>
-                            <li><a href="#">판례검색<span class="arrow_icon"></span></a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="#">로그인<span class="arrow_icon"></span></a></li>
                 </ul>
                 <div class="function_box">
                     <a class="copy" href="#"></a>
@@ -238,153 +218,23 @@
             </div>
         </div>
         <div id="contents">
-            <div class="page_title">
-                <div class="container">
-                    <h1>입법예고</h1>
-                    <a class="ir_pm goto_l" href="#">이전</a>
-                    <a class="ir_pm goto_r" href="#">다음</a>
-                </div>
-            </div>
-            <div class="search_box">
-                <div class="container">
-                    <select name="searchOption" id="searchOption">
-                        <option>--검색 선택--</option>
-                        <option>제목</option>
-                        <option>내용</option>
-                        <option>부서명</option>
-                    </select>
-                    <label for="searchCont"></label>
-                    <input id="searchCont" type="text" placeholder="검색어를 입력하세요">
-                    <button type="submit" class="btn_search">검색</button>
-                    <button type="button" class="btn_reset">초기화</button>
-                </div>
-            </div>
             <div class="cont_box">
                 <div class="container">
-                    <div class="view_option">
-                        <div class="view_page">
-                            <span class="entire_c">총 게시물 <em>511</em>건</span>
-                            <span>현재 페이지 <em><strong class="present_p">1</strong>/<strong class="whole_p">52</strong></em></span>
-                        </div>
-                        <div class="view_num">
-                            <label for="rowPerPage">페이지당 목록</label>
-                            <select name="rowPerPage" id="rowPerPage">
-                                <option value="10">10</option>
-                                <option value="12">12</option>
-                                <option value="15">15</option>
-                                <option value="50">50</option>
-                                <option value="500">500</option>
-                            </select>
-                            <button type="submit">변경</button>
-                        </div>
-                    </div>
-                    <table class="cont_table">
-                        <caption>공지사항</caption>
-                        <tr>
-                            <th class="w_80">순번</th>
-                            <th class="w_520">제목</th>
-                            <th>파일</th>
-                            <th class="w_240">부서명</th>
-                            <th>등록일</th>
-                            <th>조회수</th>
-                        </tr>
-                        <tr>
-                            <td>511</td>
-                            <td><a href="#">제2021-9호 경찰공무원 임용령 일부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 생활안전 범죄예방정책과</td>
-                            <td>2021-04-09</td>
-                            <td>2505</td>
-                        </tr>
-                        <tr>
-                            <td>510</td>
-                            <td><a href="#">제2021-10호 실종아동등의 보호 및 지원에 관한 법률 시행령 일부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 생활안전 아동청소년과</td>
-                            <td>2021-04-09</td>
-                            <td>266</td>
-                        </tr>
-                        <tr>
-                            <td>509</td>
-                            <td><a href="#">제2021-5호 도로교토법 시행령 일부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 경무인사기획 인사</td>
-                            <td>2021-04-07</td>
-                            <td>799</td>
-                        </tr>
-                        <tr>
-                            <td>508</td>
-                            <td><a href="#">제2021-4호 시도자치경찰위원회에 두는 경찰공무원의 정원에 관한 규정 시행규칙 제정 입법예고</a></td>
-                            <td></td>
-                            <td>본청 기획조정 자치경찰담당관</td>
-                            <td>2021-04-07</td>
-                            <td>1850</td>
-                        </tr>
-                        <tr>
-                            <td>507</td>
-                            <td><a href="#">제2021-2호 도로교통법 시행규칙 일부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 기획조정 자치경찰담당관</td>
-                            <td>2021-04-07</td>
-                            <td>305</td>
-                        </tr>
-                        <tr>
-                            <td>506</td>
-                            <td><a href="#">제2021-1호 경찰공무원 임용령 시행규칙 일부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 생활안전 아동청소년과</td>
-                            <td>2021-04-06</td>
-                            <td>785</td>
-                        </tr>
-                        <tr>
-                            <td>505</td>
-                            <td><a href="#">제2020-38호 경비업법 일부개정법률안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 기획조정 과학치안정책팀</td>
-                            <td>2021-04-04</td>
-                            <td>633</td>
-                        </tr>
-                        <tr>
-                            <td>504</td>
-                            <td><a href="#">제2020-36호 경찰청과 그 소속기관 직제 시행규칙 전부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 기획조정 혁신기획조정 자치경찰기획</td>
-                            <td>2021-04-04</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>503</td>
-                            <td><a href="#">「경찰법」전부개정에 따른 12개 부령의 일부개정에 관한 부령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 생활안전 범죄예방정책과</td>
-                            <td>2021-04-04</td>
-                            <td>48</td>
-                        </tr>
-                        <tr>
-                            <td>502</td>
-                            <td><a href="#">제2020-35호 도로교통법 시행규칙 일부개정령안 입법예고</a></td>
-                            <td class="file_y"></td>
-                            <td>본청 기획조정 혁신기획조정</td>
-                            <td>2021-04-02</td>
-                            <td>2556</td>
-                        </tr>
-                    </table>
-                    <div class="table_pager">
-                        <ul>
-                            <li class="active_pager"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">7</a></li>
-                            <li><a href="#">8</a></li>
-                            <li><a href="#">9</a></li>
-                            <li><a href="#">10</a></li>
-                            <li class="next_p ir_pm"><a href="#">next</a></li>
-                            <li class="first_p ir_pm"><a href="#">Go to first page</a></li>
-                        </ul>
-                    </div>
+                    <h1>LOGIN</h1>
+                    <form id="loginForm">
+                        <fieldset>
+                            <div class="login_box">
+                                <input id="userID" type="text" value="" placeholder="아이디">
+                                <input id="userPW" type="password" value="" placeholder="비밀번호">
+                            </div>
+                            <p class="btn">
+                                <label for="saveID" id="saveIDLabel">아이디 저장</label>
+                                <input id="saveID" type="checkbox">
+                                <a id="forgotInfo" href="#">아이디/비밀번호 찾기</a>
+                            </p>
+                            <input type="submit" value="로그인" id="doLogin">
+                        </fieldset>
+                    </form>
                 </div>
             </div>
             <div class="ref">
