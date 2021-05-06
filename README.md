@@ -15,6 +15,9 @@ Korean National Police Agency web site code cloning
 * Pages 
   - 1 main page
   - 8 sub pages : Including English page and Login page
-    + <img src="img/Simpson.png", width="300">
+  
 
-![homepage_capture](https://user-images.githubusercontent.com/71386860/110272791-5f32e300-800e-11eb-9637-b78f6786b14b.png)
+
+<img src="./_ref/captures/homepage_capture.png", width="300">
+
+
