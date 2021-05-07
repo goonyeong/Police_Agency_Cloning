@@ -46,6 +46,23 @@ function sub6ControlTab(){
     });
 }
 
+// Sub6 Put date /////////////////////////////////////////////////
+function sub6Date(){
+    var CALENDAR_MONTH = document.getElementById('month');
+    var CALENDAR_DATE = document.getElementById('date');
+    var CALENDAR_DAY = document.getElementById('day');
+    
+    var TODAY = new Date();
+    var month = TODAY.getMonth() + 1;
+    var date = TODAY.getDate();
+    var day_array = ['일', '월', '화', '수', '목', '금', '토']
+    var day = day_array[TODAY.getDay()];
+
+    CALENDAR_MONTH.innerHTML = month;
+    CALENDAR_DATE.innerHTML = date;
+    CALENDAR_DAY.innerHTML = day;    
+}
+
 // Sub7 Slide contents /////////////////////////////////////////////////
 function sub7DoSlide(){
     var SLIDE_WRAP = $('#wrap_07 .slide');
@@ -74,12 +91,15 @@ function sub7DoSlide(){
 
 }
 
+
+
 // init /////////////////////////////////////////////////////////////////
 function init(){
     letMenuVisible();
     sub2ControlNewTab();
     sub4DoSlideToggle();
     sub6ControlTab();
+    sub6Date();
     sub7DoSlide();
 }
 

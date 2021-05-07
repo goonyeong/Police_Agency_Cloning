@@ -10,6 +10,7 @@
 
 /* nav_06  */
 .chief_news .image_box a{background: #ccc url(../../img/IE8/intro_chiefnews.png) no-repeat center bottom;}
+.chief_schedule .calendar ul li .ie8_cal{display: inline;}
 .chief_schedule .calendar p{top: 72px; left: 37px;}
 
 /* nav_07(Eng) */
