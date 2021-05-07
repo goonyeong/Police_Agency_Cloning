@@ -90,6 +90,7 @@ a{font-family: 'Noto Sans KR', sans-serif;}
 .cont_02 .arrow_news_r{top: 50%; right: -5%; transform: translate(0, -50%); background-position: -48px 0;}
 .cont_02 .news_pager{width: 82px; height: 33px; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); background: #5b6269; line-height: 33px; text-align: center; font-size: 12px; color: #fff; font-weight: bold;}
 .cont_02 .news_pager .current_pg{color: #fbcd32;}
+.cont_02 .news_pager .ie8_visible{display: none;}
 .cont_02 .container>button{width: 33px; height: 33px; position: absolute; bottom: 0; left: 54%; cursor: pointer; background: #5b6269 url(../img/pausecontrol_white.png) no-repeat 5px 5px;}
 .cont_02 .container>.play{background: #5b6269 url(../img/pausecontrol_white.png) no-repeat -18px 5px;}
 .newslist_frame{width: 1200px; overflow: hidden;}
